@@ -1,0 +1,97 @@
+body {
+    background: linear-gradient(rgb(48, 48, 211), rgb(255, 0, 85));
+}
+* {
+    margin: 0;
+}
+#outerWrapper {
+    background:palevioletred;
+    margin: 20px;
+}
+#Wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 2fr 3fr 3fr 3fr 0.5fr;
+    grid-template-areas: 
+    " hd hd hd "
+    " a1 i1 i1 "
+    " i2 i2 a2 "
+    " i3 a3 i4 "
+    " ft ft ft "
+    ;
+    height: 200vh;
+    scroll-behavior: smooth;
+}
+#head {
+    
+    display: flex;
+    background:rgb(240, 111, 144);
+    grid-area: hd;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-items: stretch;
+    
+}
+
+#box1 {
+    background:gold;
+   
+}
+#box2 {
+    background:gold;
+    
+}
+#box3 {
+    background:gold;
+    
+}
+
+
+
+
+#article1 {
+    grid-area: a1;
+    background:rgb(224, 87, 122);
+}
+
+#article2 {
+    grid-area: a2;
+    background:rgb(224, 87, 122);
+}
+
+#article3 {
+    grid-area: a3;
+    background: rgb(224, 87, 122);
+}
+#img1 {
+    grid-area: i1;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+#img2 {
+    grid-area: i2;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+a #img3 {
+    grid-area: i3;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-left: 25px;
+}
+#img4 {
+    grid-area: i4;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+#foot {
+    grid-area: ft;
+    background:rgb(153, 63, 86)
+}
